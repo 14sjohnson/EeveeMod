@@ -2,6 +2,7 @@ eevee\cards\democards\complex\EasyXCostDemo.class
 eevee\cards\democards\complex\InlinePowerDemo$1.class
 eevee\powers\AbstractEasyPower.class
 eevee\actions\EasyXCostAction.class
+eevee\cards\EeveeCards\SandAttack.class
 eevee\cards\democards\complex\MultiCardPreviewAndDrawCallback.class
 eevee\relics\AbstractEasyRelic.class
 eevee\util\TexLoader.class
@@ -9,6 +10,7 @@ eevee\cards\cardvars\SecondMagicNumber.class
 eevee\cards\democards\simple\DrawAndShiv.class
 eevee\cards\AbstractEasyCard$1.class
 eevee\cards\democards\simple\StartupBlockCard.class
+eevee\cards\Tackle.class
 eevee\util\TexLoader$DisposeListener.class
 eevee\util\ImageHelper.class
 eevee\cards\democards\complex\EasyModalChoiceDemo.class

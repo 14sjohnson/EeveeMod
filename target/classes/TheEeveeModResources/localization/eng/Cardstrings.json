@@ -7,6 +7,18 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "TheEeveeMod:Covet": {
+    "NAME": "Covet",
+    "DESCRIPTION": "Deal !D! damage. NL !M! percent chance to gain a relic or potion"
+  },
+  "TheEeveeMod:SandAttack": {
+    "NAME": "Sand Attack",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! vulnerable"
+  },
+  "TheEeveeMod:Tackle": {
+    "NAME": "Tackle",
+    "DESCRIPTION": "Deal !D! damage."
+  },
   "TheEeveeMod:ExampleTwoAmountPowerCard": {
     "NAME": "Two Amount Power",
     "DESCRIPTION": "At the start of your turn, gain !M! Strength and !TheEeveeMod:m2! Dexterity."

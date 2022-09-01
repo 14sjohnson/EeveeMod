@@ -7,6 +7,18 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:Covet": {
+    "NAME": "Covet",
+    "DESCRIPTION": "Deal !D! damage. NL !M! percent chance to gain a relic or potion"
+  },
+  "${ModID}:SandAttack": {
+    "NAME": "Sand Attack",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! vulnerable"
+  },
+  "${ModID}:Tackle": {
+    "NAME": "Tackle",
+    "DESCRIPTION": "Deal !D! damage."
+  },
   "${ModID}:ExampleTwoAmountPowerCard": {
     "NAME": "Two Amount Power",
     "DESCRIPTION": "At the start of your turn, gain !M! Strength and !${ModID}:m2! Dexterity."

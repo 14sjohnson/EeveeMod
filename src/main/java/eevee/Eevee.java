@@ -20,6 +20,9 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import eevee.cards.Defend;
 import eevee.cards.Strike;
+import eevee.cards.Tackle;
+import eevee.cards.EeveeCards.SandAttack;
+import eevee.cards.democards.simple.TwoTypesOfDamage;
 import eevee.relics.TodoItem;
 
 import java.util.ArrayList;
@@ -70,12 +73,14 @@ public class Eevee extends CustomPlayer {
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        for (int i = 0; i < 4; i++) {
-            retVal.add(Strike.ID);
+        for (int i = 0; i < 5; i++) {
+            retVal.add(Tackle.ID);
         }
         for (int i = 0; i < 4; i++) {
             retVal.add(Defend.ID);
         }
+        retVal.add(TwoTypesOfDamage.ID);
+        retVal.add(SandAttack.ID);
         return retVal;
     }
 
