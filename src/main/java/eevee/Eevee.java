@@ -1,5 +1,6 @@
 package eevee;
 
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
@@ -19,14 +20,17 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import eevee.cards.Defend;
-import eevee.cards.Strike;
+import eevee.cards.EeveeCards.DoubleEdge;
 import eevee.cards.Tackle;
 import eevee.cards.EeveeCards.SandAttack;
+import eevee.cards.EeveeCards.Covet;
 import eevee.cards.democards.simple.TwoTypesOfDamage;
 import eevee.relics.TodoItem;
+import eevee.potions.SitrusBerry;
 
 import java.util.ArrayList;
 
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.srcRareCardPool;
 import static eevee.Eevee.Enums.TODO_COLOR;
 import static eevee.EeveeMod.*;
 
@@ -43,7 +47,7 @@ public class Eevee extends CustomPlayer {
             modID + "Resources/images/char/mainChar/orb/layer3d.png",
             modID + "Resources/images/char/mainChar/orb/layer4d.png",
             modID + "Resources/images/char/mainChar/orb/layer5d.png",};
-    static final String ID = makeID("Eevee"); //TODO: Change this
+    static final String ID = makeID("Eevee");
     static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
     static final String[] NAMES = characterStrings.NAMES;
     static final String[] TEXT = characterStrings.TEXT;
@@ -73,14 +77,15 @@ public class Eevee extends CustomPlayer {
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 4; i++) {
             retVal.add(Tackle.ID);
         }
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 2; i++) {
             retVal.add(Defend.ID);
         }
         retVal.add(TwoTypesOfDamage.ID);
         retVal.add(SandAttack.ID);
+        retVal.add(Covet.ID);
         return retVal;
     }
 
@@ -129,8 +134,7 @@ public class Eevee extends CustomPlayer {
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        System.out.println("YOU NEED TO SET getStartCardForEvent() in your " + getClass().getSimpleName() + " file!");
-        return null;
+        return new SandAttack();
     }
 
     @Override
@@ -172,7 +176,7 @@ public class Eevee extends CustomPlayer {
     }
 
     public static class Enums {
-        //TODO: Change these.
+
         @SpireEnum
         public static AbstractPlayer.PlayerClass THE_TODO;
         @SpireEnum(name = "TODO_COLOR")

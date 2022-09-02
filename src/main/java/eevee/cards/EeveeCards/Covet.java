@@ -29,13 +29,13 @@ public class Covet extends AbstractEasyCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        dmg(m, AbstractGameAction.AttackEffect.NONE);
-        if(MathUtils.random(100) < 10){
-            addToBot((AbstractGameAction)new ObtainPotionAction(AbstractDungeon.returnRandomPotion(true)));
+        if(MathUtils.random(100) < 100){
+            addToBot(new ObtainPotionAction(AbstractDungeon.returnTotallyRandomPotion()));
         }
+        dmg(m, AbstractGameAction.AttackEffect.NONE);
     }
 
     public void upp() {
-        upgradeBlock(3);
+        upgradeDamage(3);
     }
 }

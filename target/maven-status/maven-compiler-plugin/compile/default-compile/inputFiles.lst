@@ -6,10 +6,12 @@ C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeMo
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\util\ImageHelper.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\actions\RepeatCardAction.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\EeveeMod.java
+C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\EeveeCards\TacklePlus.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\democards\complex\InlinePowerDemo.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\EeveeCards\SandAttack.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\democards\simple\TwoTypesOfDamage.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\cardvars\SecondDamage.java
+C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\EeveeCards\DoubleEdge.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\util\Wiz.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\democards\complex\ExampleTwoAmountPowerCard.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\democards\complex\MultiCardPreviewAndDrawCallback.java
@@ -17,11 +19,14 @@ C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeMo
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\democards\complex\EasyXCostDemo.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\democards\simple\StartupBlockCard.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\util\TexLoader.java
+C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\potions\SitrusBerry.java
+C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\EeveeCards\TakeDown.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\relics\AbstractEasyRelic.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\cardvars\SecondMagicNumber.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\EasyModalChoiceCard.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\powers\AbstractEasyPower.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\democards\simple\DrawAndShiv.java
+C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\EeveeCards\Covet.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\powers\LambdaPower.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\cards\democards\complex\SelectCardsPlusCardMods.java
 C:\Users\Scott Johnson\Desktop\Scott Stuff\Game Stuff\ProTemplate-master\EeveeModSrc\src\main\java\eevee\actions\TimedVFXAction.java

@@ -10,6 +10,7 @@ import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
@@ -19,7 +20,9 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import eevee.cards.AbstractEasyCard;
 import eevee.cards.cardvars.SecondDamage;
 import eevee.cards.cardvars.SecondMagicNumber;
+import eevee.potions.SitrusBerry;
 import eevee.relics.AbstractEasyRelic;
+import eevee.Eevee;
 
 import java.nio.charset.StandardCharsets;
 
@@ -32,7 +35,7 @@ public class EeveeMod implements
         EditKeywordsSubscriber,
         EditCharactersSubscriber {
 
-    public static final String modID = "TheEeveeMod"; //TODO: Change this.
+    public static final String modID = "TheEeveeMod";
 
     public static String makeID(String idText) {
         return modID + ":" + idText;
@@ -102,10 +105,15 @@ public class EeveeMod implements
         EeveeMod thismod = new EeveeMod();
     }
 
+    public void receiveEditPotions() {
+        BaseMod.addPotion(SitrusBerry.class, null, null, null, SitrusBerry.POTION_ID, Eevee.Enums.THE_TODO);
+    }
+
     @Override
     public void receiveEditCharacters() {
         BaseMod.addCharacter(new Eevee(Eevee.characterStrings.NAMES[1], Eevee.Enums.THE_TODO),
                 CHARSELECT_BUTTON, CHARSELECT_PORTRAIT, Eevee.Enums.THE_TODO);
+        receiveEditPotions();
     }
 
     @Override

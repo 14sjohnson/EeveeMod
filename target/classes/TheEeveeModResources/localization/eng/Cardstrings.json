@@ -7,6 +7,18 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "TheEeveeMod:TakeDown": {
+    "NAME": "Take Down",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "TheEeveeMod:TacklePlus": {
+    "NAME": "Tackle Plus",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "TheEeveeMod:DoubleEdge": {
+    "NAME": "Double Edge",
+    "DESCRIPTION": "Deal !D! damage."
+  },
   "TheEeveeMod:Covet": {
     "NAME": "Covet",
     "DESCRIPTION": "Deal !D! damage. NL !M! percent chance to gain a relic or potion"
