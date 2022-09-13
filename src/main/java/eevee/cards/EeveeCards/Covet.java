@@ -29,7 +29,7 @@ public class Covet extends AbstractEasyCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(MathUtils.random(100) < 100){
+        if(MathUtils.random(100) < baseMagicNumber){
             addToBot(new ObtainPotionAction(AbstractDungeon.returnTotallyRandomPotion()));
         }
         dmg(m, AbstractGameAction.AttackEffect.NONE);
@@ -37,5 +37,6 @@ public class Covet extends AbstractEasyCard {
 
     public void upp() {
         upgradeDamage(3);
+        upgradeMagicNumber(10);
     }
 }

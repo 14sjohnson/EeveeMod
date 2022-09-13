@@ -21,6 +21,7 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import eevee.cards.Defend;
 import eevee.cards.EeveeCards.DoubleEdge;
+import eevee.cards.EeveeCards.PerfectEVs;
 import eevee.cards.Tackle;
 import eevee.cards.EeveeCards.SandAttack;
 import eevee.cards.EeveeCards.Covet;
@@ -31,7 +32,7 @@ import eevee.potions.SitrusBerry;
 import java.util.ArrayList;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.srcRareCardPool;
-import static eevee.Eevee.Enums.TODO_COLOR;
+import static eevee.Eevee.Enums.EEVEE_COLOR;
 import static eevee.EeveeMod.*;
 
 public class Eevee extends CustomPlayer {
@@ -86,6 +87,7 @@ public class Eevee extends CustomPlayer {
         retVal.add(TwoTypesOfDamage.ID);
         retVal.add(SandAttack.ID);
         retVal.add(Covet.ID);
+        retVal.add(PerfectEVs.ID);
         return retVal;
     }
 
@@ -114,7 +116,7 @@ public class Eevee extends CustomPlayer {
 
     @Override
     public AbstractCard.CardColor getCardColor() {
-        return TODO_COLOR;
+        return EEVEE_COLOR;
     }
 
     @Override
@@ -178,10 +180,10 @@ public class Eevee extends CustomPlayer {
     public static class Enums {
 
         @SpireEnum
-        public static AbstractPlayer.PlayerClass THE_TODO;
-        @SpireEnum(name = "TODO_COLOR")
-        public static AbstractCard.CardColor TODO_COLOR;
-        @SpireEnum(name = "TODO_COLOR")
+        public static AbstractPlayer.PlayerClass EEVEE;
+        @SpireEnum(name = "EEVEE_COLOR")
+        public static AbstractCard.CardColor EEVEE_COLOR;
+        @SpireEnum(name = "EEVEE_COLOR")
         @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
     }

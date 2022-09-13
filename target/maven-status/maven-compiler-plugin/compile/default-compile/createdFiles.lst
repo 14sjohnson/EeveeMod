@@ -18,6 +18,7 @@ eevee\powers\LambdaPower.class
 eevee\cards\cardvars\SecondDamage.class
 eevee\actions\ApplyCardModifierAction.class
 eevee\cards\Strike.class
+eevee\cards\EeveeCards\PerfectEVs.class
 eevee\cards\democards\complex\InlinePowerDemo.class
 eevee\EeveeMod.class
 eevee\relics\TodoItem.class
@@ -40,5 +41,6 @@ eevee\util\CardArtRoller$ReskinInfo.class
 eevee\util\CardArtRoller.class
 eevee\cards\EeveeCards\TakeDown.class
 eevee\cards\democards\complex\MultiCardPreviewAndDrawCallback$1.class
+eevee\powers\PerfectEVsPower.class
 eevee\cards\EasyModalChoiceCard.class
 eevee\cards\AbstractEasyCard.class

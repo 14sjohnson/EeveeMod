@@ -14,20 +14,16 @@
  import com.megacrit.cardcrawl.potions.AbstractPotion;
  import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-public class SitrusBerry extends AbstractPotion {
-       public static final String POTION_ID = "SitrusBerry";
+
+ import eevee.EeveeMod;
+
+ public class SitrusBerry extends AbstractPotion {
+       public static final String POTION_ID = EeveeMod.makeID("SitrusBerry");
        private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString("SitrusBerry");
     
        public SitrusBerry() {
              super(potionStrings.NAME, "SitrusBerry", AbstractPotion.PotionRarity.COMMON, AbstractPotion.PotionSize.SPIKY, AbstractPotion.PotionEffect.NONE, Color.GRAY, Color.DARK_GRAY, null);
-        
-        
-        
-        
-        
-        
-        
-        
+
              this.labOutlineColor = Settings.GREEN_RELIC_COLOR;
              this.isThrown = false;
            }
@@ -45,16 +41,7 @@ public class SitrusBerry extends AbstractPotion {
             int amount = Math.round(AbstractDungeon.player.maxHealth / 3);
             AbstractDungeon.player.heal(amount);
        }
-/*             Shiv shiv = new Shiv();
-             shiv.upgrade();
-             if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
-                   addToBot((AbstractGameAction)new MakeTempCardInHandAction(shiv.makeStatEquivalentCopy(), this.potency));
-                 }
 
- */
-
-    
-    
        public int getPotency(int ascensionLevel) {
              return 3;
            }

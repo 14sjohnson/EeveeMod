@@ -16,7 +16,7 @@
         <ModTheSpire.version>3.18.2</ModTheSpire.version>
 
         <!-- CHANGE THIS TO MATCH YOUR MODID FIELD IN THE MAIN TodoMod CLASS FILE -->
-        <ModID>TheEeveeMod</ModID>
+        <ModID>EeveeMod</ModID>
         <!-- CHANGE THIS TO MATCH YOUR MODID FIELD IN THE MAIN TodoMod CLASS FILE -->
 
         <!--CHANGE THIS TO YOUR STEAM INSTALLATION-->
@@ -89,7 +89,7 @@
                 <directory>src/main/resources</directory>
                 <filtering>false</filtering>
                 <excludes>
-                    <exclude>TheEeveeModResources/**/*.json</exclude>
+                    <exclude>EeveeModResources/**/*.json</exclude>
                     <exclude>ModTheSpire.json</exclude>
                 </excludes>
             </resource>
@@ -98,7 +98,7 @@
                 <filtering>true</filtering>
                 <includes>
                     <include>ModTheSpire.json</include>
-                    <include>TheEeveeModResources/**/*.json</include>
+                    <include>EeveeModResources/**/*.json</include>
                 </includes>
             </resource>
         </resources>

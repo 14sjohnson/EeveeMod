@@ -10,19 +10,20 @@ import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import eevee.cards.AbstractEasyCard;
 import eevee.cards.cardvars.SecondDamage;
 import eevee.cards.cardvars.SecondMagicNumber;
 import eevee.potions.SitrusBerry;
 import eevee.relics.AbstractEasyRelic;
-import eevee.Eevee;
 
 import java.nio.charset.StandardCharsets;
 
@@ -33,9 +34,12 @@ public class EeveeMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        EditCharactersSubscriber {
+        EditCharactersSubscriber,
+        PostCampfireSubscriber {
 
-    public static final String modID = "TheEeveeMod";
+    public static final String modID = "EeveeMod";
+
+    private static final Logger logger = LogManager.getLogger("EeveeMod");
 
     public static String makeID(String idText) {
         return modID + ":" + idText;
@@ -74,7 +78,7 @@ public class EeveeMod implements
     public EeveeMod() {
         BaseMod.subscribe(this);
 
-        BaseMod.addColor(Eevee.Enums.TODO_COLOR, characterColor, characterColor, characterColor,
+        BaseMod.addColor(Eevee.Enums.EEVEE_COLOR, characterColor, characterColor, characterColor,
                 characterColor, characterColor, characterColor, characterColor,
                 ATTACK_S_ART, SKILL_S_ART, POWER_S_ART, CARD_ENERGY_S,
                 ATTACK_L_ART, SKILL_L_ART, POWER_L_ART,
@@ -106,14 +110,20 @@ public class EeveeMod implements
     }
 
     public void receiveEditPotions() {
-        BaseMod.addPotion(SitrusBerry.class, null, null, null, SitrusBerry.POTION_ID, Eevee.Enums.THE_TODO);
+        BaseMod.addPotion(SitrusBerry.class, null, null, null, SitrusBerry.POTION_ID, Eevee.Enums.EEVEE);
     }
 
     @Override
     public void receiveEditCharacters() {
-        BaseMod.addCharacter(new Eevee(Eevee.characterStrings.NAMES[1], Eevee.Enums.THE_TODO),
-                CHARSELECT_BUTTON, CHARSELECT_PORTRAIT, Eevee.Enums.THE_TODO);
+        BaseMod.addCharacter(new Eevee(Eevee.characterStrings.NAMES[1], Eevee.Enums.EEVEE),
+                CHARSELECT_BUTTON, CHARSELECT_PORTRAIT, Eevee.Enums.EEVEE);
         receiveEditPotions();
+    }
+
+    @Override
+    public boolean receivePostCampfire(){
+        logger.info("Exited Campfire ");
+        return true;
     }
 
     @Override
