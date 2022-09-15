@@ -15,10 +15,10 @@ eevee\cards\EeveeCards\Covet.class
 eevee\actions\RepeatCardAction.class
 eevee\cards\Defend.class
 eevee\powers\LambdaPower.class
+eevee\cards\EeveeCards\EVTraining.class
 eevee\cards\cardvars\SecondDamage.class
 eevee\actions\ApplyCardModifierAction.class
 eevee\cards\Strike.class
-eevee\cards\EeveeCards\PerfectEVs.class
 eevee\cards\democards\complex\InlinePowerDemo.class
 eevee\EeveeMod.class
 eevee\relics\TodoItem.class

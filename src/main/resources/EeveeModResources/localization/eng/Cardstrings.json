@@ -73,6 +73,21 @@
       " Strength."
     ]
   },
+  "${ModID}:EVTraining": {
+  "NAME": "EV Training",
+  "DESCRIPTION": "Choose one: NL Gain !M! Strength, NL  Gain !M! Dexterity, NL Or Gain !!${ModID}:m2 Evasion.",
+  "EXTENDED_DESCRIPTION": [
+    "Attack Stat",
+    "Gain ",
+    " Strength.",
+    "Defense Stat",
+    "Gain ",
+    " Dexterity.",
+    "Speed Stat",
+    "Gain ",
+    " Evasion."
+  ]
+},
   "${ModID}:DrawAndShiv": {
     "NAME": "Draw and Shiv",
     "DESCRIPTION": "Draw 1 card. NL Add 1 *Shiv into your hand."

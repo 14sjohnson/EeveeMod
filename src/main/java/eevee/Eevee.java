@@ -1,6 +1,5 @@
 package eevee;
 
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
@@ -20,18 +19,15 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import eevee.cards.Defend;
-import eevee.cards.EeveeCards.DoubleEdge;
-import eevee.cards.EeveeCards.PerfectEVs;
+import eevee.cards.EeveeCards.EVTraining;
 import eevee.cards.Tackle;
 import eevee.cards.EeveeCards.SandAttack;
 import eevee.cards.EeveeCards.Covet;
 import eevee.cards.democards.simple.TwoTypesOfDamage;
 import eevee.relics.TodoItem;
-import eevee.potions.SitrusBerry;
 
 import java.util.ArrayList;
 
-import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.srcRareCardPool;
 import static eevee.Eevee.Enums.EEVEE_COLOR;
 import static eevee.EeveeMod.*;
 
@@ -87,7 +83,7 @@ public class Eevee extends CustomPlayer {
         retVal.add(TwoTypesOfDamage.ID);
         retVal.add(SandAttack.ID);
         retVal.add(Covet.ID);
-        retVal.add(PerfectEVs.ID);
+        retVal.add(EVTraining.ID);
         return retVal;
     }
 
